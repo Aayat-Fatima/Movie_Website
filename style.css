@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color:#333;
+    background-color: #121212;
+}
+
+/* Header */
+header {
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background: #272727;
+    color: #fff;
+}
+
+#hero h2 {
+    margin-top: 0;
+}
+
+/* Movie Grid */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.movie-card {
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #1f1f1f;
+    color: #fff;
+    border-radius: 8px;
+}
+
+form label, form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form input, form textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #2f2f2f;
+    color: #fff;
+}
+
+form button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #b20710;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #1f1f1f;
+    color: #fff;
+}

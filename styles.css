@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1b;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #232323;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .nav-links a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    color: orange;
+  }
+  
+  .notification-bar {
+    background-color: #e53935;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .notification-bar span {
+    font-weight: bold;
+  }
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .slide {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+
+  .banner img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Container for the image slider */
+.banner {
+  width: 100%; /* Ya fixed width jaisa 600px */
+  height: 300px; /* Ya aap apni requirement ke hisab se height set kar sakte hain */
+  overflow: hidden; /* Hide the parts that are not visible */
+  position: relative;
+}
+
+/* Slide wrapper to hold all images */
+.banner .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%; /* All images will start from outside the container */
+  animation: slideAnimation 45s; /* Animation will run for 45 seconds and repeat */
+}
+
+.banner .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images are properly scaled */
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideAnimation {
+  0% {
+    left: 100%; /* Start position outside to the right */
+  }
+  20% {
+    left: 0; /* Move to the center */
+  }
+  25% {
+    left: 0; /* Stay in the center for a while */
+  }
+  45% {
+    left: -100%; /* Move out to the left */
+  }
+  100% {
+    left: -100%; /* Stay out to the left */
+  }
+}
+
+/* Different timings for each slide so they appear one after another */
+.banner .slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.banner .slide:nth-child(2) {
+  animation-delay: 15s; /* Start after 15 seconds */
+}
+
+.banner .slide:nth-child(3) {
+  animation-delay: 30s; /* Start after 30 seconds */
+}
+.banner .slide:nth-child(4){
+  align-self: start;
+}
+
+  
+  
+  .categories {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .categories button {
+    margin: 0 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .categories button:hover {
+    background-color: orange;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .tab.active {
+    border-bottom: 2px solid orange;
+  }
+  
+  .movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movie-card img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  .movie-card:hover {
+    transform: translateY(-40px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+  .rating {
+    display: block;
+    margin-top: 5px;
+    color: orange;
+  }
+
+  #main2{
+    width:100vw;
+    height: 100vh;
+    background-color: #282525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .top{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+  }
+  .bottom{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+  }
+  .innercard{
+    width: 20%;
+    background-size: 100% 100%;
+    height: 85%;
+    background-image: url("sabarmati.jpg");
+    position: relative;
+    border-radius: 20px;
+  }
+  .outercard{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to right,rgb(77 ,7, 72),rgb(20,26,28));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    
+  }
+  .outercard:hover{
+    transform: rotate(45deg);
+    transform-origin: left bottom;
+    transition: all 1s;
+  }
+  #id1{
+    font-size: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: #e53935;
+  }
+  
